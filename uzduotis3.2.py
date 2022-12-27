@@ -1,11 +1,16 @@
 import datetime
 import calendar
 
+# 3.2. Perdaryti 2 užduotį taip, kad jei kuriant objektą,
+# nepaduodama jokia data, veiksmai turi būti atliekami su programuotojo gimtadieniu.
+
+
+
 # Sukurti klasę Sukaktis, kuri turėtų savybę data (galima atskirai įvesti metus, mėnesius ir kt.) ir metodus
 # kurie gražina, kiek nuo įvestos sukakties praėjo metų, savaičių, dienų, valandų, minučių, sekundžių
 
 class Sukaktis:
-    def __init__(self, metai, menuo, diena, valandos, minutes, sekundes):
+    def __init__(self, metai=1988, menuo=3, diena=29, valandos=16, minutes=35, sekundes=0):
         self.metai = metai
         self.menuo = menuo
         self.diena = diena
@@ -41,9 +46,9 @@ class Sukaktis:
 
 
 
-
-
-ivesta_sukaktis1 = Sukaktis(2000, 2, 2, 1, 1, 1)
+#kai nenurodoma data
+ivesta_sukaktis1 = Sukaktis()
+#ivesta_sukaktis1 = Sukaktis(2000, 2, 2, 1, 1, 1)
 ivesta_sukaktis1.praejo_laiko()
 
 ivesta_sukaktis1.tikrinam_ar_keliamieji()
