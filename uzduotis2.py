@@ -1,8 +1,8 @@
 import datetime
 import calendar
 
-# Sukurti klasę Sukaktis, kuri turėtų savybę data (galima atskirai įvesti metus, mėnesius ir kt.) ir metodus,
-# kurie gražina, kiek nuo įvestos sukakties praėjo metų, savaičių, dienų, valandų, minučių, sekundžių.
+# Sukurti klasę Sukaktis, kuri turėtų savybę data (galima atskirai įvesti metus, mėnesius ir kt.) ir metodus
+# kurie gražina, kiek nuo įvestos sukakties praėjo metų, savaičių, dienų, valandų, minučių, sekundžių
 
 class Sukaktis:
     def __init__(self, metai, menuo, diena, valandos, minutes, sekundes):
